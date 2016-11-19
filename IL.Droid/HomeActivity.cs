@@ -1,13 +1,12 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using IL.Core;
+using IL.Droid;
 
 namespace IL.Android {
 
-    [Activity(Label = "Intersectional Life", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity {
-
+    [Activity(Label = "Intersectional Life", MainLauncher = true, Icon = "@drawable/ic_launcher")]
+    public class HomeActivity : Activity {
 
         private TextView _description;
 
@@ -19,7 +18,7 @@ namespace IL.Android {
 
             FindViews();
 
-            _description.Text = Data.Description;
+            //_description.Text = Data.Description;
         }
 
         private void FindViews() {

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("IL.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("IL.Droid.Resource", IsApplication=true)]
 
-namespace IL.Android
+namespace IL.Droid
 {
 	
 	
@@ -45,7 +45,7 @@ namespace IL.Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int icon = 2130837504;
+			public const int ic_launcher = 2130837504;
 			
 			static Drawable()
 			{
