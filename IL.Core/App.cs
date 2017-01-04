@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Localization;
-using MvvmCross.Platform;
+﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
 
 namespace IL.Core {
@@ -12,21 +9,12 @@ namespace IL.Core {
 
             base.Initialize();
 
-            //CreatableTypes()
-            //    .EndingWith("Repository")
-            //    .AsInterfaces()
-            //    .RegisterAsLazySingleton();
-
             CreatableTypes()
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            //Mvx.RegisterSingleton<IMvxTextProvider>
-            //    (new ResxTextProvider(Strings.ResourceManager));
-
-            RegisterAppStart(new AppStart());
+            RegisterAppStart<ViewModels.MainViewModel>();
         }
-
     }
 }

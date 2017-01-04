@@ -3,7 +3,7 @@ using MvvmCross.Core.ViewModels;
 
 namespace IL.Core {
 
-    public class AppStart : MvxNavigatingObject, IMvxAppStart{
+    public class AppStart : MvxNavigatingObject, IMvxAppStart {
 
         public void Start(object hint = null) {
 

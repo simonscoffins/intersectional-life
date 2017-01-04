@@ -1,9 +1,9 @@
 ﻿namespace IL.Core.Utility {
     public enum MenuOption {
         
-        MenuOption1 = 0,
-        MenuOption2 = 1,
-        MenuOption3 = 2,
-        MenuOption4 = 3,
+        About = 0,
+        Insurance = 1,
+        Directions = 2,
+        SpecializedFocus = 3,
     }
 }
