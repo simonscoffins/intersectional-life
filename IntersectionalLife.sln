@@ -10,10 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 		Libraries\MvvmCross.Droid.Support.V7.Fragging.4.1.1\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.Fragging.dll = Libraries\MvvmCross.Droid.Support.V7.Fragging.4.1.1\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.Fragging.dll
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvvm.Core", "Mvvm.Core\Mvvm.Core.csproj", "{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvvm.Droid", "Mvvm.Droid\Mvvm.Droid.csproj", "{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IL.Droid", "IL.Droid\IL.Droid.csproj", "{B10EB542-FB1B-4F97-9939-04D819E0F3C9}"
 EndProject
 Global
@@ -26,16 +22,6 @@ Global
 		{C64F278C-375D-49F4-8BED-4DC6ADFD9E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64F278C-375D-49F4-8BED-4DC6ADFD9E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64F278C-375D-49F4-8BED-4DC6ADFD9E0C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0DC75A21-8A7E-4842-B8FB-335C8CC12DF4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{B10EB542-FB1B-4F97-9939-04D819E0F3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B10EB542-FB1B-4F97-9939-04D819E0F3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B10EB542-FB1B-4F97-9939-04D819E0F3C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

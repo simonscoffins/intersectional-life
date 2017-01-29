@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">Intersectional Life</string>
-    <string name="drawer_open">Open</string>
-    <string name="drawer_close">Close</string>  
+  <string name="ApplicationName">Intersectional Life</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+
+
+  <!-- Business Info -->
+  <string name="biz_name">Intersectional Life</string>
+  <string name="biz_sub_name">Counseling and Psychology</string>
+  <string name="biz_manager">Counseling and Psychology</string>
+  <string name="biz_manager">Elisabeth Yaelingh-Scoffins, Ph.D.</string>
+  <string name="biz_manager_credentials">Licensed Clinical Psychologist</string>
+  
 </resources>

@@ -5,9 +5,9 @@ namespace IL.Core.ViewModels {
     public class MainViewModel : MvxViewModel {
 
 
-        public void ShowMenu() {
-            ShowViewModel<MenuViewModel>();
-        }
+        //public void ShowMenu() {
+        //    ShowViewModel<MenuViewModel>();
+        //}
 
         public void ShowAbout() {
             ShowViewModel<AboutViewModel>();
@@ -18,7 +18,7 @@ namespace IL.Core.ViewModels {
         }
 
         public void ShowDirections() {
-            ShowViewModel<DirectionsViewModel>();
+            ShowViewModel<LocationViewModel>();
         }
 
         public void ShowSpecializedFocus() {

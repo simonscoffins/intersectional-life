@@ -3,36 +3,38 @@
 xmlns:local="http://schemas.android.com/apk/res-auto">
 
   <group android:id="@+id/nav_items">
-    
+
     <item
         android:id="@+id/nav_about"
-        android:title="About" >
-    </item>
+        android:icon="@mipmap/ic_home_black_24dp"
+        android:title="About" />
 
     <item
       android:id="@+id/nav_insurance"
-      android:title="Insurance" >
-    </item>
+      android:icon="@mipmap/ic_attach_money_black_24dp"
+      android:title="Insurance" />
 
     <item
-        android:id="@+id/nav_directions"
-        android:title="Directions" >
-    </item>
+      android:id="@+id/nav_directions"
+      android:icon="@mipmap/ic_map_black_24dp"
+      android:title="Directions" />
 
     <item
-        android:id="@+id/nav_specializedfocus"
-        android:title="Special Focus" >
-    </item>
+      android:id="@+id/nav_specializedfocus"
+      android:icon="@mipmap/ic_search_black_24dp"
+      android:title="Special Focus" />
 
   </group>
 
   <group android:id="@+id/nav_footer">
     <item
-        android:id="@+id/nav_settings"
-        android:title="Settings" />
+      android:id="@+id/nav_settings"
+      android:icon="@mipmap/ic_settings_black_24dp"
+      android:title="Settings" />
     <item
-        android:id="@+id/nav_helpfeedback"
-        android:title="Help and Feedback" />
+      android:id="@+id/nav_helpfeedback"
+      android:icon="@mipmap/ic_help_black_24dp"
+      android:title="Help and Feedback" />
   </group>
 
 </menu>

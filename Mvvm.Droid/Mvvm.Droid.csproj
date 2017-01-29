@@ -170,12 +170,6 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mvvm.Core\Mvvm.Core.csproj">
-      <Project>{05CE61D9-F9FC-4776-95EF-36B5FA480A2C}</Project>
-      <Name>Mvvm.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
