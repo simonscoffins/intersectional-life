@@ -2337,16 +2337,19 @@ namespace IL.Droid
 			public const int drawer_shadow_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int logo = 2130837615;
+			public const int info_window_background = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int logo1 = 2130837616;
+			public const int logo = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int navigation_empty_icon = 2130837617;
+			public const int logo1 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int notification_template_icon_bg = 2130837618;
+			public const int navigation_empty_icon = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int notification_template_icon_bg = 2130837619;
 			
 			static Drawable()
 			{
@@ -2373,11 +2376,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a000c
 			public const int MvxBindingTagUnique = 2131361804;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int SpecializedTextView = 2131361949;
+			// aapt resource value: 0x7f0a00a1
+			public const int SpecializedTextView = 2131361953;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int action0 = 2131361936;
+			// aapt resource value: 0x7f0a0094
+			public const int action0 = 2131361940;
 			
 			// aapt resource value: 0x7f0a006a
 			public const int action_bar = 2131361898;
@@ -2403,8 +2406,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a006b
 			public const int action_context_bar = 2131361899;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int action_divider = 2131361940;
+			// aapt resource value: 0x7f0a0098
+			public const int action_divider = 2131361944;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2448,14 +2451,17 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0029
 			public const int beginning = 2131361833;
 			
+			// aapt resource value: 0x7f0a008c
+			public const int bicycling = 2131361932;
+			
 			// aapt resource value: 0x7f0a0031
 			public const int bottom = 2131361841;
 			
 			// aapt resource value: 0x7f0a0053
 			public const int buttonPanel = 2131361875;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int cancel_action = 2131361937;
+			// aapt resource value: 0x7f0a0095
+			public const int cancel_action = 2131361941;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int center = 2131361848;
@@ -2469,8 +2475,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0061
 			public const int checkbox = 2131361889;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int chronometer = 2131361943;
+			// aapt resource value: 0x7f0a009b
+			public const int chronometer = 2131361947;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int clip_horizontal = 2131361857;
@@ -2484,8 +2490,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0059
 			public const int contentPanel = 2131361881;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int content_frame = 2131361932;
+			// aapt resource value: 0x7f0a0090
+			public const int content_frame = 2131361936;
 			
 			// aapt resource value: 0x7f0a005f
 			public const int custom = 2131361887;
@@ -2520,8 +2526,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a001c
 			public const int disableHome = 2131361820;
 			
+			// aapt resource value: 0x7f0a008e
+			public const int drawer_layout = 2131361934;
+			
 			// aapt resource value: 0x7f0a008a
-			public const int drawer_layout = 2131361930;
+			public const int driving = 2131361930;
 			
 			// aapt resource value: 0x7f0a006c
 			public const int edit_query = 2131361900;
@@ -2529,8 +2538,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a002a
 			public const int end = 2131361834;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int end_padder = 2131361948;
+			// aapt resource value: 0x7f0a00a0
+			public const int end_padder = 2131361952;
 			
 			// aapt resource value: 0x7f0a0033
 			public const int enterAlways = 2131361843;
@@ -2583,8 +2592,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0084
 			public const int image_view_row_icon = 2131361924;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int info = 2131361947;
+			// aapt resource value: 0x7f0a009f
+			public const int info = 2131361951;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int item_touch_helper_previous_elevation = 2131361792;
@@ -2595,11 +2604,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0019
 			public const int light = 2131361817;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int line1 = 2131361941;
-			
 			// aapt resource value: 0x7f0a0099
-			public const int line3 = 2131361945;
+			public const int line1 = 2131361945;
+			
+			// aapt resource value: 0x7f0a009d
+			public const int line3 = 2131361949;
 			
 			// aapt resource value: 0x7f0a001a
 			public const int listMode = 2131361818;
@@ -2607,11 +2616,14 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0050
 			public const int list_item = 2131361872;
 			
+			// aapt resource value: 0x7f0a008d
+			public const int locaton = 2131361933;
+			
 			// aapt resource value: 0x7f0a0089
 			public const int map = 2131361929;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int media_actions = 2131361939;
+			// aapt resource value: 0x7f0a0097
+			public const int media_actions = 2131361943;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int middle = 2131361835;
@@ -2622,11 +2634,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0023
 			public const int multiply = 2131361827;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int nav_about = 2131361952;
+			// aapt resource value: 0x7f0a00a4
+			public const int nav_about = 2131361956;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int nav_directions = 2131361954;
+			// aapt resource value: 0x7f0a00a6
+			public const int nav_directions = 2131361958;
 			
 			// aapt resource value: 0x7f0a0086
 			public const int nav_drawer_header_biz_name = 2131361926;
@@ -2634,29 +2646,29 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0087
 			public const int nav_drawer_header_biz_sub_name = 2131361927;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int nav_footer = 2131361956;
+			// aapt resource value: 0x7f0a00a8
+			public const int nav_footer = 2131361960;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int nav_helpfeedback = 2131361958;
-			
-			// aapt resource value: 0x7f0a00a1
-			public const int nav_insurance = 2131361953;
-			
-			// aapt resource value: 0x7f0a009f
-			public const int nav_items = 2131361951;
+			// aapt resource value: 0x7f0a00aa
+			public const int nav_helpfeedback = 2131361962;
 			
 			// aapt resource value: 0x7f0a00a5
-			public const int nav_settings = 2131361957;
+			public const int nav_insurance = 2131361957;
 			
 			// aapt resource value: 0x7f0a00a3
-			public const int nav_specializedfocus = 2131361955;
+			public const int nav_items = 2131361955;
+			
+			// aapt resource value: 0x7f0a00a9
+			public const int nav_settings = 2131361961;
+			
+			// aapt resource value: 0x7f0a00a7
+			public const int nav_specializedfocus = 2131361959;
 			
 			// aapt resource value: 0x7f0a007e
 			public const int navigation_header_container = 2131361918;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int navigation_view = 2131361933;
+			// aapt resource value: 0x7f0a0091
+			public const int navigation_view = 2131361937;
 			
 			// aapt resource value: 0x7f0a002f
 			public const int never = 2131361839;
@@ -2784,8 +2796,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a003e
 			public const int start = 2131361854;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int status_bar_latest_event_content = 2131361938;
+			// aapt resource value: 0x7f0a0096
+			public const int status_bar_latest_event_content = 2131361942;
 			
 			// aapt resource value: 0x7f0a0064
 			public const int submenuarrow = 2131361892;
@@ -2799,11 +2811,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0011
 			public const int terrain = 2131361809;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int text = 2131361946;
+			// aapt resource value: 0x7f0a009e
+			public const int text = 2131361950;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int text2 = 2131361944;
+			// aapt resource value: 0x7f0a009c
+			public const int text2 = 2131361948;
 			
 			// aapt resource value: 0x7f0a005c
 			public const int textSpacerNoButtons = 2131361884;
@@ -2814,8 +2826,8 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0083
 			public const int text_input_password_toggle = 2131361923;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int time = 2131361942;
+			// aapt resource value: 0x7f0a009a
+			public const int time = 2131361946;
 			
 			// aapt resource value: 0x7f0a0052
 			public const int title = 2131361874;
@@ -2823,11 +2835,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a0057
 			public const int title_template = 2131361879;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int toolbar = 2131361950;
+			// aapt resource value: 0x7f0a00a2
+			public const int toolbar = 2131361954;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int toolbar_layout = 2131361931;
+			// aapt resource value: 0x7f0a008f
+			public const int toolbar_layout = 2131361935;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int top = 2131361842;
@@ -2838,11 +2850,11 @@ namespace IL.Droid
 			// aapt resource value: 0x7f0a007a
 			public const int touch_outside = 2131361914;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int txtAddress = 2131361935;
+			// aapt resource value: 0x7f0a0093
+			public const int txtAddress = 2131361939;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int txtName = 2131361934;
+			// aapt resource value: 0x7f0a0092
+			public const int txtName = 2131361938;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int up = 2131361801;
@@ -2852,6 +2864,9 @@ namespace IL.Droid
 			
 			// aapt resource value: 0x7f0a000a
 			public const int view_offset_helper = 2131361802;
+			
+			// aapt resource value: 0x7f0a008b
+			public const int walking = 2131361931;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int wide = 2131361814;

@@ -1,8 +1,12 @@
-﻿using Android.Gms.Maps;
+﻿using System;
+using Android.Content;
+using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 using IL.Core.Model;
 using IL.Core.ViewModels;
 using IL.Droid.Activities;
@@ -21,6 +25,14 @@ namespace IL.Droid.Fragments {
         private Location _location;
         private LatLng _mapLocation;
 
+        private Button _btnDriving;
+        private Button _btnWalking;
+        private Button _btnBicycling;
+        private Button _btnLocation;
+
+        private string _geoLocation;
+        private string _navigation;
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
             base.OnCreateView(inflater, container, savedInstanceState);
@@ -31,16 +43,70 @@ namespace IL.Droid.Fragments {
             _mapView = view.FindViewById<MapView>(Resource.Id.map);
             _mapView.OnCreate(savedInstanceState);
 
-            Initialize();
+            Initialize(view);
+            HandleEvents();
 
             return view;
         }
 
-        private void Initialize() {
+        private void Initialize(View view) {
+
+
+            _btnDriving = view.FindViewById<Button>(Resource.Id.driving);
+            _btnWalking = view.FindViewById<Button>(Resource.Id.walking);
+            _btnBicycling = view.FindViewById<Button>(Resource.Id.bicycling);
+            _btnLocation = view.FindViewById<Button>(Resource.Id.locaton);
 
             _location = ViewModel.Location;
             _mapLocation = new LatLng(_location.Latitude, _location.Longitude);
+
+            SetupMapQueries();
         }
+
+
+        private void HandleEvents() {
+            _btnDriving.Click += BtnDrivingOnClick;
+            _btnWalking.Click += BtnWalkingOnClick;
+            _btnBicycling.Click += BtnBicyclingOnClick;
+            _btnLocation.Click += BtnLocationOnClick;
+        }
+
+        private void BtnDrivingOnClick(object sender, EventArgs eventArgs) {
+            var uri = Android.Net.Uri.Parse(_navigation);
+            var mapIntent = new Intent(Intent.ActionView, uri);
+            mapIntent.SetPackage("com.google.android.apps.maps");
+            StartActivity(mapIntent);
+        }
+
+
+        private void BtnLocationOnClick(object sender, EventArgs eventArgs) {
+
+            var uri = Android.Net.Uri.Parse(_geoLocation);
+            var mapIntent = new Intent(Intent.ActionView, uri);
+            mapIntent.SetPackage("com.google.android.apps.maps");
+            StartActivity(mapIntent);
+        }
+
+        private void BtnBicyclingOnClick(object sender, EventArgs eventArgs) {
+            throw new NotImplementedException();
+        }
+
+        private void BtnWalkingOnClick(object sender, EventArgs eventArgs) {
+            throw new NotImplementedException();
+        }
+
+        private void SetupMapQueries() {
+
+            // setup geo location
+            var encodedName = Android.Net.Uri.Encode(Constants.FullName);
+            _geoLocation = $"geo:{_location.Latitude},{_location.Longitude}?q={encodedName}";
+
+            // setup navigation
+            var address = $"+{Constants.Address1}+{Constants.City}+{Constants.State}+{Constants.ZipCode}";
+            _navigation = ($"google.navigation:q={encodedName},{address}");
+        }
+
+
 
 
         public override void OnViewCreated(View view, Bundle savedInstanceState) {

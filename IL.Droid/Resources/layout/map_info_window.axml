@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="100"
-    android:background="@color/colorPrimary">
-    <ImageView
-        android:src="@drawable/logo"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"        
-        android:layout_weight="50" />
-<!--<ImageView
-    android:src="@drawable/logo"
+    android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="80dp"
-    android:id="@+id/image_view_row_icon"
-    android:layout_centerVertical="true"
-    android:layout_alignParentTop="true"
-    android:scaleType="fitStart"
-    android:layout_marginRight="0.0dp" />-->
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:background="@android:color/transparent">
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_width="250dp"        
         android:layout_height="match_parent"
-        android:layout_weight="50">
-        <TextView
-            android:id="@+id/txtName"
-            android:textSize="@dimen/text_medium"
-            android:text="@string/biz_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
-        <TextView
-            android:id="@+id/txtAddress"
-            android:textSize="@dimen/text_medium"
-            android:text="@string/biz_sub_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
+        android:weightSum="100"
+        android:background="@drawable/info_window_background">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:scaleType="fitStart" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80">
+            <TextView
+                android:id="@+id/txtName"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/biz_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/txtAddress"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/biz_sub_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -5,11 +5,7 @@ namespace IL.Core.ViewModels {
 
     public class LocationViewModel : MvxViewModel {
 
-
-
         public LocationViewModel() {
-
-
             Initialise();
         }
 
@@ -18,16 +14,16 @@ namespace IL.Core.ViewModels {
             this.Title = "Location";
 
             this.Location = new Location {
-                Latitude = 40.040898,
-                Longitude = -76.303913
+                Latitude = Constants.Latitude,
+                Longitude = Constants.Longitude
             };
 
             this.Address = new Address {
-                Address1 = "135 North Duke Street",
-                Address2 = "Suite 1",
-                City = "Lancaster",
-                State = "PA",
-                ZipCode = "17602"
+                Address1 = Constants.Address1,
+                Address2 = Constants.Address2,
+                City = Constants.City,
+                State = Constants.State,
+                ZipCode = Constants.ZipCode
             };
         }
 
