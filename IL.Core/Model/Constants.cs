@@ -19,6 +19,5 @@
         public const double Latitude = 40.040860;
         public const double Longitude = -76.303967;
 
-
     }
 }

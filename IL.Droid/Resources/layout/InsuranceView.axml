@@ -3,16 +3,27 @@
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@color/white">
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Insurance View" />
-    <TextView
-        android:id="@+id/InsuranceTextView"
+        android:id="@+id/insurance_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17dp"
-        android:text="Insurance details go here"
-        local:MvxBind="Text Information" />
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/default_vertical_padding"
+        android:text="Insurance Heading"
+        local:MvxBind="Text Heading" />
+    <Mvx.MvxListView
+        android:id="@+id/insurance_list"
+        android:divider="@null"
+        android:scrollbars="vertical"
+        android:padding="@dimen/default_horizontal_padding"
+        android:choiceMode="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        local:MvxItemTemplate="@layout/insurance_cardview_item"
+        local:MvxBind="ItemsSource Content" />
 </LinearLayout>

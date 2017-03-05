@@ -4,15 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Specialized Focus View" />
-    <TextView
-        android:id="@+id/SpecializedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="17dp"
-        android:text="Specia;ized focus information go here"
-        local:MvxBind="Text Information" />
+
+  <Mvx.MvxListView
+      android:divider="@null"
+      android:scrollbars="vertical"
+      android:padding="@dimen/default_horizontal_padding"
+      android:choiceMode="none"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      local:MvxItemTemplate="@layout/specialized_focus_item"
+      local:MvxBind="ItemsSource Content" />
 </LinearLayout>

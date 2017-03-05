@@ -25,13 +25,17 @@ namespace IL.Droid.Fragments {
         private Location _location;
         private LatLng _mapLocation;
 
-        private Button _btnDriving;
-        private Button _btnWalking;
-        private Button _btnBicycling;
-        private Button _btnLocation;
+        private ImageButton _btnDriving;
+        private ImageButton _btnWalking;
+        private ImageButton _btnBicycling;
+        private ImageButton _btnLocation;
 
         private string _geoLocation;
         private string _navigation;
+
+        private const string Driving = "d";
+        private const string Walking = "w";
+        private const string Bicycling = "b";
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -51,11 +55,10 @@ namespace IL.Droid.Fragments {
 
         private void Initialize(View view) {
 
-
-            _btnDriving = view.FindViewById<Button>(Resource.Id.driving);
-            _btnWalking = view.FindViewById<Button>(Resource.Id.walking);
-            _btnBicycling = view.FindViewById<Button>(Resource.Id.bicycling);
-            _btnLocation = view.FindViewById<Button>(Resource.Id.locaton);
+            _btnDriving = view.FindViewById<ImageButton>(Resource.Id.driving);
+            _btnWalking = view.FindViewById<ImageButton>(Resource.Id.walking);
+            _btnBicycling = view.FindViewById<ImageButton>(Resource.Id.bicycling);
+            _btnLocation = view.FindViewById<ImageButton>(Resource.Id.location);
 
             _location = ViewModel.Location;
             _mapLocation = new LatLng(_location.Latitude, _location.Longitude);
@@ -72,12 +75,17 @@ namespace IL.Droid.Fragments {
         }
 
         private void BtnDrivingOnClick(object sender, EventArgs eventArgs) {
-            var uri = Android.Net.Uri.Parse(_navigation);
-            var mapIntent = new Intent(Intent.ActionView, uri);
-            mapIntent.SetPackage("com.google.android.apps.maps");
-            StartActivity(mapIntent);
+            TurnByTurnNavigation(Driving);
         }
 
+
+        private void BtnBicyclingOnClick(object sender, EventArgs eventArgs) {
+            TurnByTurnNavigation(Bicycling);
+        }
+
+        private void BtnWalkingOnClick(object sender, EventArgs eventArgs) {
+            TurnByTurnNavigation(Walking);
+        }
 
         private void BtnLocationOnClick(object sender, EventArgs eventArgs) {
 
@@ -87,13 +95,14 @@ namespace IL.Droid.Fragments {
             StartActivity(mapIntent);
         }
 
-        private void BtnBicyclingOnClick(object sender, EventArgs eventArgs) {
-            throw new NotImplementedException();
+        private void TurnByTurnNavigation(string mode) {
+
+            var uri = Android.Net.Uri.Parse(_navigation + "&mode=" + mode);
+            var mapIntent = new Intent(Intent.ActionView, uri);
+            mapIntent.SetPackage("com.google.android.apps.maps");
+            StartActivity(mapIntent);
         }
 
-        private void BtnWalkingOnClick(object sender, EventArgs eventArgs) {
-            throw new NotImplementedException();
-        }
 
         private void SetupMapQueries() {
 
@@ -179,6 +188,7 @@ namespace IL.Droid.Fragments {
 
             var mrkrOptions = new MarkerOptions();
             mrkrOptions.SetPosition(_mapLocation);
+
             //var bmd = BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueRose);
             //marker.SetIcon(bmd);
             mrkrOptions.SetTitle(Constants.Name);

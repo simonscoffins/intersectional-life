@@ -3,16 +3,63 @@
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@color/white">
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="About View" />
-    <TextView
-        android:id="@+id/AboutTextView"
+        android:id="@+id/about_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17dp"
-        android:text="About Information Goes Here"
-        local:MvxBind="Text Information" />
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/default_vertical_padding"
+        android:text="About Heading"
+        local:MvxBind="Text Heading" />
+    <ImageView
+        android:id="@+id/about_liz_image"
+        android:src="@drawable/liz"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginBottom="@dimen/default_vertical_padding" />
+    <TextView
+        android:id="@+id/about_paragraph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Dr. Yaelingh-Scoffins is a fully licensed Clinical Psychologist who trained at Eastern Michigan University. She has worked in local group and individual private practice as well as a number of college and university counseling centers. Her research and teaching focus is Prejudice and Discrimination / Multicultural Psychology."
+        local:MvxBind="Text Paragraph1" />
+    <TextView
+        android:id="@+id/about_paragraph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:text=""
+        local:MvxBind="Text Paragraph2" />
+    <TextView
+        android:id="@+id/about_paragraph3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:text=""
+        local:MvxBind="Text Paragraph3" />
+    <TextView
+        android:id="@+id/about_paragraph4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:text=""
+        local:MvxBind="Text Paragraph4" />
+    <TextView
+        android:id="@+id/about_qualifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:text=""
+        local:MvxBind="Text Qualifications" />
 </LinearLayout>

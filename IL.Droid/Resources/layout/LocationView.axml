@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="100">
+    android:layout_height="match_parent">
     <com.google.android.gms.maps.MapView
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_weight="80"
-        android:layout_height="0dp" />
+        android:layout_height="match_parent" />
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20">
-        <Button
-            android:text="Driving"
-            android:id="@+id/driving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:alpha="0.5">
+        <ImageButton
+            android:src="@drawable/ic_directions_car_black_36dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <Button
-            android:text="Walking"
-            android:id="@+id/walking"
+            android:layout_height="match_parent"
+            android:id="@+id/driving" />
+        <ImageButton
+            android:src="@drawable/ic_directions_walk_black_36dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <Button
-            android:text="Bicycling"
-            android:id="@+id/bicycling"
+            android:layout_height="match_parent"
+            android:id="@+id/walking" />
+        <ImageButton
+            android:src="@drawable/ic_directions_bike_black_36dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <Button
-            android:text="Location"
-            android:id="@+id/locaton"
+            android:layout_height="match_parent"
+            android:id="@+id/bicycling" />
+        <ImageButton
+            android:src="@drawable/ic_location_on_black_36dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:id="@+id/location" />
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
