@@ -17,11 +17,14 @@ namespace IL.Core.ViewModels {
             this.Heading = "Insurance Boards In-Network";
 
             this.Content = new ObservableCollection<InsuranceCompany> {
-                new InsuranceCompany { Name = "Highmark", Logo = "ic_directions_car_black_36dp"},
-                new InsuranceCompany { Name = "Independence / BCBS", Logo = "ic_directions_walk_black_36dp"},
-                new InsuranceCompany { Name = "United Health Care", Logo = "ic_directions_bike_black_36dp"},
-                new InsuranceCompany { Name = "Quest EAP", Logo = "ic_location_on_black_36dp"},
-                new InsuranceCompany { Name = "Mazzitti & Sullivan EAP"}
+                new InsuranceCompany { Name = "BlueCross", Logo = "bc"},
+                new InsuranceCompany { Name = "BlueCross BlueShield", Logo = "bcbs"},
+                new InsuranceCompany { Name = "Highmark", Logo = "highmark"},
+                new InsuranceCompany { Name = "Magellan Behavioral Health", Logo = "magellan"},
+                new InsuranceCompany { Name = "Mazzitti & Sullivan EAP", Logo = "mazzitti_sullivan"},
+                new InsuranceCompany { Name = "Quest EAP", Logo = "quest"},
+                new InsuranceCompany { Name = "United Health Care", Logo = "unitedhealthcare"},
+                new InsuranceCompany { Name = "Independence / BCBS", Logo = "independence"},
             };
         }
 

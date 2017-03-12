@@ -22,7 +22,7 @@ namespace IL.Core.ViewModels {
 
             this.Paragraph4 = "Dr. Yaelingh-Scoffins is a fully licensed Clinical Psychologist who trained at Eastern Michigan University. She has worked in local group and individual private practice as well as a number of college and university counseling centers. Her research and teaching focus is Prejudice and Discrimination / Multicultural Psychology.";
 
-            this.Qualifications = "License No. and State: PS017478 Pennsylvania";
+            this.Qualifications = "PS017478 Pennsylvania";
         }
 
 

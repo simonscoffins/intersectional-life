@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-  <TextView
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="This Is The Splash Screen" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--<ImageView
+        android:src="@drawable/logo_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginBottom="@dimen/default_vertical_padding" />-->
+  <!--<TextView
+        android:id="@+id/splash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_huge"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Splash Text" />-->
 </LinearLayout>
