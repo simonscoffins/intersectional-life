@@ -4,14 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-  <Mvx.MvxListView
-      android:divider="@null"
-      android:scrollbars="vertical"
-      android:padding="@dimen/default_horizontal_padding"
-      android:choiceMode="none"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      local:MvxItemTemplate="@layout/specialized_focus_item"
-      local:MvxBind="ItemsSource Content" />
+    <Mvx.MvxListView
+        android:divider="@null"
+        android:scrollbars="vertical"
+        android:padding="@dimen/default_horizontal_padding"
+        android:choiceMode="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        local:MvxItemTemplate="@layout/specialized_focus_item"
+        local:MvxBind="ItemsSource Content" />
 </LinearLayout>

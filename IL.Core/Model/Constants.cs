@@ -3,6 +3,7 @@
 
 
         // Business
+        public const string Logo = "logo";
         public const string Name = "Intersectional Life";
         public const string FullName = "Intersectional Life Counseling and Psychology";
 
@@ -14,6 +15,9 @@
         public const string State = "PA";
         public const string ZipCode = "17602";
 
+        // Contact
+        public const string Phone = "(717) 947-4623";
+        public const string Email = "IntersectionalLife@gmail.com";
 
         // Location
         public const double Latitude = 40.040860;

@@ -88,6 +88,10 @@ namespace IL.Droid.Activities {
                     case Resource.Id.nav_specializedfocus:
                         ViewModel.ShowSpecializedFocus();
                         break;
+
+                    case Resource.Id.nav_contact:
+                        ViewModel.ShowContact();
+                        break;
                 }
 
                 _drawerLayout.CloseDrawers();

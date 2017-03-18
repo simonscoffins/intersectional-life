@@ -43,6 +43,7 @@
     <Compile Include="Model\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\MenuOption.cs" />
+    <Compile Include="ViewModels\ContactViewModel.cs" />
     <Compile Include="ViewModels\SpecializedFocusViewModel.cs" />
     <Compile Include="ViewModels\InsuranceViewModel.cs" />
     <Compile Include="ViewModels\LocationViewModel.cs" />

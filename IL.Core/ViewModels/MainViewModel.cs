@@ -24,5 +24,9 @@ namespace IL.Core.ViewModels {
         public void ShowSpecializedFocus() {
             ShowViewModel<SpecializedFocusViewModel>();
         }
+
+        public void ShowContact() {
+            ShowViewModel<ContactViewModel>();
+        }
     }
 }

@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Fragments\ContactFragment.cs" />
     <Compile Include="Fragments\SpecializedFocusFragment.cs" />
     <Compile Include="Fragments\LocationFragment.cs" />
     <Compile Include="Fragments\InsuranceFragment.cs" />
@@ -216,6 +217,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\specialized_focus_item.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContactView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
