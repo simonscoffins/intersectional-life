@@ -77,7 +77,6 @@
             android:text="Zip Code"
             local:MvxBind="Text ZipCode" />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/contact_phone_layout"
         android:orientation="horizontal"
@@ -86,7 +85,7 @@
         android:gravity="center_vertical"
         android:clickable="true">
         <ImageView
-            android:src="@drawable/ic_fiber_manual_record_black_24px"
+            android:src="@drawable/ic_phone_black_24px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -99,29 +98,25 @@
             android:text="(123) 456-7890"
             local:MvxBind="Text Phone" />
     </LinearLayout>
-
-
     <LinearLayout
-      android:id="@+id/contact_email_layout"
-      android:orientation="horizontal"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:gravity="center_vertical"
-      android:clickable="true">
-      <ImageView
-          android:src="@drawable/ic_fiber_manual_record_black_24px"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
-      <TextView
-          android:id="@+id/contact_email"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textSize="@dimen/text_large"
-          android:textColor="@color/colorPrimary"
-          android:layout_marginRight="@dimen/default_horizontal_padding"
-          android:text="email@gmail.com"
-          local:MvxBind="Text Email" />
+        android:id="@+id/contact_email_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:clickable="true">
+        <ImageView
+            android:src="@drawable/ic_email_black_24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="@dimen/default_horizontal_padding"
+            android:text="email@gmail.com"
+            local:MvxBind="Text Email" />
     </LinearLayout>
-  
-  
 </LinearLayout>

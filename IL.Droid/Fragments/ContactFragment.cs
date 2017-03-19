@@ -18,6 +18,7 @@ namespace IL.Droid.Fragments {
         private LinearLayout _phoneLayoutView;
         private LinearLayout _emailLayoutView;
         private TextView _phoneNumberView;
+        private TextView _emailTextView;
 
         public override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -45,6 +46,7 @@ namespace IL.Droid.Fragments {
             _phoneLayoutView = View.FindViewById<LinearLayout>(Resource.Id.contact_phone_layout);
             _emailLayoutView = View.FindViewById<LinearLayout>(Resource.Id.contact_email_layout);
             _phoneNumberView = View.FindViewById<TextView>(Resource.Id.contact_phone);
+            _emailTextView = View.FindViewById<TextView>(Resource.Id.contact_email);
         }
 
         private void WireEvents() {
@@ -54,12 +56,17 @@ namespace IL.Droid.Fragments {
 
         private void _phoneLayoutView_Click(object sender, System.EventArgs e) {
             var uri = Android.Net.Uri.Parse($"tel: {_phoneNumberView.Text}");
-            var intent = new Intent(Intent.ActionCall, uri);
+            var intent = new Intent(Intent.ActionDial, uri);
             StartActivity(intent);
         }
 
         private void _emailLayoutView_Click(object sender, System.EventArgs e) {
-            throw new System.NotImplementedException();
+            var intent = new Intent(Intent.ActionSend);
+
+            intent.PutExtra(Intent.ExtraEmail, new string[] { _emailTextView.Text });
+            intent.PutExtra(Intent.ExtraSubject, "From Mobile App");
+            intent.SetType("message/rfc822");
+            StartActivity(intent);
         }
 
 
