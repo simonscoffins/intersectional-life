@@ -5,11 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IL.Core", "IL.Core\IL.Core.csproj", "{C64F278C-375D-49F4-8BED-4DC6ADFD9E0C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{F7708DF0-9654-49E2-B714-8DDB8106D9C8}"
-	ProjectSection(SolutionItems) = preProject
-		Libraries\MvvmCross.Droid.Support.V7.Fragging.4.1.1\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.Fragging.dll = Libraries\MvvmCross.Droid.Support.V7.Fragging.4.1.1\lib\MonoAndroid403\MvvmCross.Droid.Support.V7.Fragging.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IL.Droid", "IL.Droid\IL.Droid.csproj", "{B10EB542-FB1B-4F97-9939-04D819E0F3C9}"
 EndProject
 Global

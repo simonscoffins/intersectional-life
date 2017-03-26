@@ -81,7 +81,7 @@ namespace IL.Droid.Activities {
                         ViewModel.ShowInsurance();
                         break;
 
-                    case Resource.Id.nav_directions:
+                    case Resource.Id.nav_location:
                         ViewModel.ShowDirections();
                         break;
 

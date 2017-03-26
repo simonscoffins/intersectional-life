@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:background="@color/white">
-    <TextView
-        android:id="@+id/insurance_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/text_large"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_marginBottom="@dimen/default_vertical_padding"
-        android:text="Insurance Heading"
-        local:MvxBind="Text Heading" />
     <Mvx.MvxListView
         android:id="@+id/insurance_list"
         android:divider="@null"
@@ -24,5 +15,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         local:MvxItemTemplate="@layout/insurance_cardview_item"
-        local:MvxBind="ItemsSource Content" />
+        local:MvxBind="ItemsSource InsuranceList" />
 </LinearLayout>

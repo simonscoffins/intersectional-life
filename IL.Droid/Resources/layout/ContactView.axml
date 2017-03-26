@@ -17,7 +17,7 @@
         android:id="@+id/contact_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_large"
+        android:textSize="@dimen/text_huge"
         android:textColor="@color/colorPrimaryDark"
         android:layout_marginBottom="@dimen/default_vertical_padding"
         android:text="Business Name"
@@ -25,15 +25,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/default_vertical_padding">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/contact_address1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="Address1"
             local:MvxBind="Text Address1" />
         <TextView
@@ -48,14 +46,14 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_horizontal_padding">
         <TextView
             android:id="@+id/contact_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="City"
             local:MvxBind="Text City" />
         <TextView
@@ -64,7 +62,6 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="State"
             local:MvxBind="Text State" />
         <TextView
@@ -73,7 +70,6 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="Zip Code"
             local:MvxBind="Text ZipCode" />
     </LinearLayout>
@@ -82,19 +78,20 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_vertical_padding"
         android:gravity="center_vertical"
         android:clickable="true">
         <ImageView
-            android:src="@drawable/ic_phone_black_24px"
+            android:src="@drawable/ic_phone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/element_margin_tinier" />
         <TextView
             android:id="@+id/contact_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimary"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="(123) 456-7890"
             local:MvxBind="Text Phone" />
     </LinearLayout>
@@ -106,16 +103,16 @@
         android:gravity="center_vertical"
         android:clickable="true">
         <ImageView
-            android:src="@drawable/ic_email_black_24px"
+            android:src="@drawable/ic_email"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/element_margin_tinier" />
         <TextView
             android:id="@+id/contact_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_large"
             android:textColor="@color/colorPrimary"
-            android:layout_marginRight="@dimen/default_horizontal_padding"
             android:text="email@gmail.com"
             local:MvxBind="Text Email" />
     </LinearLayout>

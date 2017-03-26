@@ -15,13 +15,13 @@
         android:padding="@dimen/default_horizontal_padding"
         android:id="@+id/linearLayout2">
         <ImageView
-            android:src="@drawable/bc"
+            android:src="@drawable/bcbs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             local:MvxBind="DrawableName Logo"
             android:id="@+id/imageView1"
             android:scaleType="fitCenter" />
-        <!--<TextView
+    <!--<TextView
             android:id="@+id/insurance_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

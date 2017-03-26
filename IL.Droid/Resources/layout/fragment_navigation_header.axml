@@ -4,27 +4,18 @@
     android:layout_width="match_parent"
     android:background="@color/colorPrimary"
     android:layout_height="160dp"
-    android:padding="16dp">
-<!--<ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />-->
-<!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:padding="16dp">-->
+    android:padding="@dimen/default_vertical_padding">
     <ImageView
         android:src="@drawable/logo"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:id="@+id/image_view_row_icon"
         android:layout_centerVertical="true"
         android:layout_alignParentTop="true"
         android:scaleType="fitStart"
-        android:layout_marginRight="0.0dp" />
-    <LinearLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"/>
+  <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,5 +39,4 @@
             android:layout_height="wrap_content"
             android:text="@string/biz_sub_name" />
     </LinearLayout>
-<!--</RelativeLayout>-->
 </RelativeLayout>

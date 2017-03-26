@@ -442,7 +442,7 @@
     <AndroidResource Include="Resources\drawable\liz.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_fiber_manual_record_black_24px.xml" />
+    <AndroidResource Include="Resources\drawable\ic_fiber_manual_record.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo_splash.png" />
@@ -455,9 +455,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bcbs.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\highmark.png" />
@@ -478,10 +475,19 @@
     <AndroidResource Include="Resources\drawable\unitedhealthcare.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_phone_black_24px.xml" />
+    <AndroidResource Include="Resources\drawable\ic_phone.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_email_black_24px.xml" />
+    <AndroidResource Include="Resources\drawable\ic_email.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_location_on.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_contacts.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bcbs.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
