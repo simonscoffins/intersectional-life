@@ -11,7 +11,6 @@ namespace IL.Droid {
     [Activity(
     Label = "@string/ApplicationName"
     , MainLauncher = true
-    //, Icon = "@drawable/ic_launcher"
     , Theme = "@style/Theme.Splash"
     , NoHistory = true
     , ScreenOrientation = ScreenOrientation.Portrait)]
@@ -19,16 +18,5 @@ namespace IL.Droid {
 
 
         public SplashScreen() : base(Resource.Layout.SplashScreen) { }
-
-        protected override void OnCreate(Bundle bundle) {
-            base.OnCreate(bundle);
-            //var textView = FindViewById<TextView>(Resource.Id.splash_text);
-            //textView.Text = Constants.FullName;
-        }
-
-
-        protected override void TriggerFirstNavigate() {
-            base.TriggerFirstNavigate();
-        }
     }
 }

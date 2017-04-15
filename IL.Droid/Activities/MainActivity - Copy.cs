@@ -28,15 +28,23 @@ namespace IL.Droid.Activities {
             get { return _drawerLayout; }
         }
 
+
         public new MainViewModel ViewModel {
             get { return (MainViewModel)base.ViewModel; }
             set { base.ViewModel = value; }
         }
 
+
         protected override void OnCreate(Bundle savedInstanceState) {
 
             base.OnCreate(savedInstanceState);
+
             SetContentView(Resource.Layout.MainView);
+
+        }
+
+        protected override void OnStart() {
+            base.OnStart();
 
             _toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             _toolbar.Title = string.Empty;
@@ -47,13 +55,14 @@ namespace IL.Droid.Activities {
             _drawerToggle = new MvxActionBarDrawerToggle(this, _drawerLayout, _toolbar, Resource.String.drawer_open, Resource.String.drawer_close);
             _drawerLayout.AddDrawerListener(_drawerToggle);
 
+            ViewModel.ShowAbout();
 
             var navigationView = FindViewById<NavigationView>(Resource.Id.navigation_view);
 
 
             navigationView.NavigationItemSelected += (sender, e) => {
 
-                //e.MenuItem.SetCheckable(true);
+                e.MenuItem.SetCheckable(true);
                 e.MenuItem.SetChecked(true);
 
                 switch (e.MenuItem.ItemId) {
@@ -81,23 +90,8 @@ namespace IL.Droid.Activities {
 
                 _drawerLayout.CloseDrawers();
             };
-
-            // first time start
-            if (savedInstanceState == null) {
-                navigationView.SetCheckedItem(Resource.Id.nav_about);
-                ViewModel.ShowAbout();
-            }
-
         }
 
-
-        public override void OnSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-            base.OnSaveInstanceState(outState, outPersistentState);
-
-
-            
-
-        }
 
         public override bool OnOptionsItemSelected(IMenuItem item) {
 
@@ -110,6 +104,38 @@ namespace IL.Droid.Activities {
         }
 
 
+        //private void ShowBackButton() {
+        //    //TODO Tell the toggle to set the indicator off
+        //    //this.DrawerToggle.DrawerIndicatorEnabled = false;
+
+        //    //Block the menu slide gesture
+        //    DrawerLayout.SetDrawerLockMode(DrawerLayout.LockModeLockedClosed);
+        //}
+
+        //private void ShowHamburguerMenu() {
+        //    //TODO set toggle indicator as enabled 
+        //    //this.DrawerToggle.DrawerIndicatorEnabled = true;
+
+        //    //Unlock the menu sliding gesture
+        //    DrawerLayout.SetDrawerLockMode(DrawerLayout.LockModeUnlocked);
+        //}
+
+        //public override void OnBackPressed() {
+        //    if (DrawerLayout != null && DrawerLayout.IsDrawerOpen(Android.Support.V4.View.GravityCompat.Start))
+        //        DrawerLayout.CloseDrawers();
+        //    else
+        //        base.OnBackPressed();
+        //}
+
+        //public void HideSoftKeyboard() {
+        //    if (CurrentFocus == null) return;
+
+        //    var inputMethodManager = (Android.Views.InputMethods.InputMethodManager)GetSystemService(InputMethodService);
+        //    inputMethodManager.HideSoftInputFromWindow(CurrentFocus.WindowToken, 0);
+
+        //    CurrentFocus.ClearFocus();
+        //        }
+
         protected override void OnPostCreate(Bundle savedInstanceState) {
             base.OnPostCreate(savedInstanceState);
             _drawerToggle.SyncState();
@@ -119,6 +145,21 @@ namespace IL.Droid.Activities {
             base.OnConfigurationChanged(newConfig);
             _drawerToggle.SyncState();
         }
+
+        //private void _drawerToggle_DrawerOpened(object sender, ActionBarDrawerEventArgs e) {
+        //    InvalidateOptionsMenu();
+        //}
+
+        //private void _drawerToggle_DrawerClosed(object sender, ActionBarDrawerEventArgs e) {
+        //    InvalidateOptionsMenu();
+        //}
+
+
+
+        //internal void CloseDrawerMenu() {
+        //    _drawerLayout.CloseDrawers();
+        //}
+
 
         public void SetCustomTitle(string title) {
             _toolbar.Title = title;

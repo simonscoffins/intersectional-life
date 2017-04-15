@@ -13,6 +13,10 @@ namespace IL.Droid.Fragments {
     [Register("mvvm.droid.fragments.SpecializedFocusFragment")]
     public class SpecializedFocusFragment : MvxFragment<SpecializedFocusViewModel> {
 
+        public SpecializedFocusFragment() {
+            this.RetainInstance = true;
+        }
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
             base.OnCreateView(inflater, container, savedInstanceState);

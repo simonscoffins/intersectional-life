@@ -20,6 +20,11 @@ namespace IL.Droid.Fragments {
         private TextView _phoneNumberView;
         private TextView _emailTextView;
 
+
+        public ContactFragment() {
+            this.RetainInstance = true;
+        }
+
         public override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
         }

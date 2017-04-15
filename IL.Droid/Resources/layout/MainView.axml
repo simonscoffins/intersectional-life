@@ -7,15 +7,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-      <android.support.design.widget.AppBarLayout
+        <android.support.design.widget.AppBarLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/toolbar_layout">
-            <include layout="@layout/toolbar" />
+            <include
+                layout="@layout/toolbar" />
         </android.support.design.widget.AppBarLayout>
-
-      <!-- Actual content of the screen -->
+    <!-- Actual content of the screen -->
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
@@ -23,25 +22,19 @@
             android:layout_centerInParent="true"
             android:layout_below="@+id/toolbar_layout" />
     </RelativeLayout>
-
-  <!-- Navigation drawer menu -->
-
-  <android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
-
-      xmlns:local="http://schemas.android.com/apk/res-auto"
-      android:id="@+id/navigation_view"
-      android:layout_height="match_parent"
-      android:layout_width="wrap_content"
-      android:layout_gravity="start"
-      android:fitsSystemWindows="true"
-      android:theme="@style/AppTheme.Menu"
-      local:headerLayout="@layout/fragment_navigation_header"
-      local:menu="@menu/navigation_drawer" />
-  
-    <!--<FrameLayout
+<!-- Navigation drawer menu -->
+    <android.support.design.widget.NavigationView xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation_view"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.Menu"
+        local:headerLayout="@layout/fragment_navigation_header"
+        local:menu="@menu/navigation_drawer" />
+<!--<FrameLayout
         android:id="@+id/navigation_frame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start" />-->
-  
 </android.support.v4.widget.DrawerLayout>

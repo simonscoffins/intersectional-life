@@ -13,9 +13,16 @@ namespace IL.Droid.Fragments {
     [Register("mvvm.droid.fragments.AboutFragment")]
     public class AboutFragment : MvxFragment<AboutViewModel> {
 
+        public AboutFragment() {
+            this.RetainInstance = true;
+        }
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
             base.OnCreateView(inflater, container, savedInstanceState);
+
+            HasOptionsMenu = true;
+
             return this.BindingInflate(Resource.Layout.AboutView, null);
         }
 

@@ -15,6 +15,10 @@ namespace IL.Droid.Fragments {
     [Register("mvvm.droid.fragments.InsuranceFragment")]
     public class InsuranceFragment : MvxFragment<InsuranceViewModel> {
 
+        public InsuranceFragment() {
+            this.RetainInstance = true;
+        }
+
 
         private ListView _insuranceListView;
 

@@ -37,6 +37,11 @@ namespace IL.Droid.Fragments {
         private const string Walking = "w";
         private const string Bicycling = "b";
 
+        public LocationFragment() {
+            this.RetainInstance = true;
+        }
+
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
             base.OnCreateView(inflater, container, savedInstanceState);
