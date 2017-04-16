@@ -41,6 +41,9 @@ namespace IL.Droid.Activities {
             _toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             _toolbar.Title = string.Empty;
             this.SetSupportActionBar(_toolbar);
+            //this.SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            //this.SupportActionBar.SetHomeButtonEnabled(true);
+
 
             _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 

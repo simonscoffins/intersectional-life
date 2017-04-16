@@ -36,9 +36,9 @@
     <item name="colorPrimary">@color/black</item>
   </style>
 
-  <style name="AppTheme.Splash" parent="AppTheme.Base">
+  <!--<style name="AppTheme.Splash" parent="AppTheme.Base">
     <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-  </style>
+  </style>-->
 
   
   <!--<style name="Widget.CardContent" parent="android:Widget">

@@ -35,14 +35,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Contracts\Services\IDialogService.cs" />
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\FillerText.cs" />
     <Compile Include="Model\Constants.cs" />
     <Compile Include="Model\InsuranceCompany.cs" />
     <Compile Include="Model\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\MenuOption.cs" />
     <Compile Include="ViewModels\ContactViewModel.cs" />
     <Compile Include="ViewModels\SpecializedFocusViewModel.cs" />
     <Compile Include="ViewModels\InsuranceViewModel.cs" />
@@ -72,7 +70,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Contracts\Services\" />
     <Folder Include="Queries\" />
+    <Folder Include="Utility\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

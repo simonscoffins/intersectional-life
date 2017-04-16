@@ -25,17 +25,9 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_huge"
             android:textColor="@color/colorPrimaryDark"
-            android:text="Business Name"
-            local:MvxBind="Text Name" />
-        <TextView
-            android:id="@+id/contact_service"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_huge"
-            android:textColor="@color/colorPrimaryDark"
             android:layout_marginBottom="@dimen/default_vertical_padding"
-            android:text="Business Service"
-            local:MvxBind="Text Service" />
+            android:text="Business Full Name"
+            local:MvxBind="Text FullName" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"

@@ -4,8 +4,6 @@ using MvvmCross.Core.ViewModels;
 namespace IL.Core.ViewModels {
     public class ContactViewModel : MvxViewModel {
 
-
-
         public ContactViewModel() {
             Initialize();
         }
@@ -15,7 +13,9 @@ namespace IL.Core.ViewModels {
             this.Title = "Contact";
 
             this.Logo = Constants.Logo;
-            this.Name = Constants.FullName;
+            this.Name = Constants.Name;
+            this.Service = Constants.Service;
+            this.FullName = Constants.FullName;
 
             this.Address1 = Constants.Address1 + ", ";
             this.Address2 = Constants.Address2;
@@ -32,6 +32,8 @@ namespace IL.Core.ViewModels {
 
         public string Logo { get; set; }
         public string Name { get; set; }
+        public string Service { get; set; }
+        public string FullName { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string City { get; set; }
@@ -40,8 +42,6 @@ namespace IL.Core.ViewModels {
 
         public string Phone { get; set; }
         public string Email { get; set; }
-
-
 
         //public MvxCommand BlahCommand {
 

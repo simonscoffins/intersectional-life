@@ -26,8 +26,16 @@
             android:id="@+id/about_liz_image"
             android:src="@drawable/liz"
             android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:layout_marginBottom="@dimen/default_vertical_padding" />
+            android:layout_height="120dp"/>
+        <TextView
+            android:id="@+id/about_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/default_vertical_padding"
+            android:text="NickName"
+            local:MvxBind="Text NickName" />
         <TextView
             android:id="@+id/about_paragraph1"
             android:layout_width="wrap_content"
@@ -35,7 +43,7 @@
             android:textSize="@dimen/text_medium"
             android:textColor="@color/colorPrimaryDark"
             android:layout_marginBottom="@dimen/default_vertical_padding"
-            android:text="Dr. Yaelingh-Scoffins is a fully licensed Clinical Psychologist who trained at Eastern Michigan University. She has worked in local group and individual private practice as well as a number of college and university counseling centers. Her research and teaching focus is Prejudice and Discrimination / Multicultural Psychology."
+            android:text=""
             local:MvxBind="Text Paragraph1" />
         <TextView
             android:id="@+id/about_paragraph2"
