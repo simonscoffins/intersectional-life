@@ -9,7 +9,7 @@ using MvvmCross.Droid.Support.V4;
 
 namespace IL.Droid.Fragments {
 
-    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
+    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("mvvm.droid.fragments.AboutFragment")]
     public class AboutFragment : MvxFragment<AboutViewModel> {
 

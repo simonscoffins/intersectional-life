@@ -16,7 +16,7 @@ using MvvmCross.Droid.Support.V4;
 
 namespace IL.Droid.Fragments {
 
-    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
+    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("mvvm.droid.fragments.LocationFragment")]
     public class LocationFragment : MvxFragment<LocationViewModel>, IOnMapReadyCallback, GoogleMap.IInfoWindowAdapter  {
 

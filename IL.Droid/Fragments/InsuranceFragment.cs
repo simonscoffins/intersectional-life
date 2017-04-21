@@ -11,7 +11,7 @@ using MvvmCross.Droid.Support.V4;
 
 namespace IL.Droid.Fragments {
 
-    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
+    [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("mvvm.droid.fragments.InsuranceFragment")]
     public class InsuranceFragment : MvxFragment<InsuranceViewModel> {
 
