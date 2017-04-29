@@ -7,11 +7,8 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Views;
 using IL.Core.ViewModels;
-using MvvmCross.Droid.Shared.Caching;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using IL.Droid.Wibble;
-using System.Collections.Generic;
 
 namespace IL.Droid.Activities {
 
@@ -20,8 +17,7 @@ namespace IL.Droid.Activities {
         Theme = "@style/AppTheme",
         LaunchMode = LaunchMode.SingleTop, 
         Icon = "@mipmap/ic_launcher")]
-    //public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel> {
-    public class MainActivity : Wibble<MainViewModel> {
+    public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel> {
 
     private DrawerLayout _drawerLayout;
         private MvxActionBarDrawerToggle _drawerToggle;
@@ -100,10 +96,6 @@ namespace IL.Droid.Activities {
 
         public override void OnSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
             base.OnSaveInstanceState(outState, outPersistentState);
-
-
-            
-
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item) {
@@ -131,38 +123,6 @@ namespace IL.Droid.Activities {
             _toolbar.Title = title;
         }
 
-        //bool _first = true;
-        public override void OnBeforeFragmentChanging(IMvxCachedFragmentInfo fragmentInfo, Android.Support.V4.App.FragmentTransaction transaction) {
-
-            var currentFrag = SupportFragmentManager.FindFragmentById(Resource.Id.content_frame) as MvvmCross.Droid.Support.V4.MvxFragment;
-
-            base.OnBeforeFragmentChanging(fragmentInfo, transaction);
-        }
-
-        public override void OnFragmentChanging(IMvxCachedFragmentInfo fragmentInfo, Android.Support.V4.App.FragmentTransaction transaction) {
-
-            var currentFrag = SupportFragmentManager.FindFragmentById(Resource.Id.content_frame) as MvvmCross.Droid.Support.V4.MvxFragment;
-
-            base.OnFragmentChanging(fragmentInfo, transaction);
-        }
-
-        public override void OnFragmentChanged(IMvxCachedFragmentInfo fragmentInfo) {
-
-            base.OnFragmentChanged(fragmentInfo);
-        }
-
-        public override void OnFragmentPopped(IList<IMvxCachedFragmentInfo> currentFragmentsInfo) {
-
-            base.OnFragmentPopped(currentFragmentsInfo);
-        }
-
-        public override void OnFragmentCreated(IMvxCachedFragmentInfo fragmentInfo, Android.Support.V4.App.FragmentTransaction transaction) {
-
-            var currentFrag = SupportFragmentManager.FindFragmentById(Resource.Id.content_frame) as MvvmCross.Droid.Support.V4.MvxFragment;
-
-            base.OnFragmentCreated(fragmentInfo, transaction);
-        }
-
         public override void OnBackPressed() {
 
             var currentFrag = SupportFragmentManager.FindFragmentById(Resource.Id.content_frame) as MvvmCross.Droid.Support.V4.MvxFragment;
@@ -178,7 +138,6 @@ namespace IL.Droid.Activities {
                     ViewModel.ShowAbout();
                 }
             }
-            //Finish();
             //base.OnBackPressed();
         }
 
